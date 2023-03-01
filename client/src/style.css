@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.container .con {
+    width: 1296px;
+    margin: auto;
+}
+
+.container header {
+    width: 100%;
+    height: 900px;
+    background-image: url(./images/headerBc.png);
+    background-size: cover;
+    background-size: auto 100%;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-color: #FAFAFA;
+}
+
+.container header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 30px 0px;
+}
+
+.container header nav img {
+    width: 62px;
+}
+
+.container header nav ul {
+    display: flex;
+    gap: 40px;
+}
+
+.container header nav ul li {
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.container header .header {
+    display: flex;
+    margin-top: 120px;
+    gap: 51px;
+}
+
+.container header .header .header_Img {
+    width: 50%;
+}
+
+.container header .header .header_Img img {
+    width: 609px;
+}
+
+.container header .header .header_Info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 22px;
+}
+
+.container header .header .header_Info .header_Info_text1 {
+    font-weight: 500;
+    color: #F43F5E;
+    font-size: 20px;
+}
+
+.container header .header .header_Info .header_Info_text2 {
+    font-weight: 700;
+    font-size: 80px;
+    color: #12141D;
+    line-height: 80px;
+}
+
+.container header .header .header_Info .header_Info_text3 {
+    font-size: 20px;
+    color: #12141D;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.container header .header .header_Info .header_Info_btn {
+    width: 272px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #EF4444;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.container header .header .header_Info .header_Info_btn:active {
+    transform: scale(0.99);
+}
+
+.container header .header .header_Info .header_Info_btn span {
+    font-weight: 600;
+    font-size: 16px;
+    color: #FFFFFF;
+}

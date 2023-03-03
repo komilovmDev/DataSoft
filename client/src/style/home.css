@@ -1,0 +1,233 @@
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: #131B1F;
+}
+
+.container header {
+    width: 100%;
+    height: 820px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/headerimg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container header nav {
+    height: 76px;
+    width: 1150px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container header nav img {
+    cursor: pointer;
+}
+
+.container header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.container header nav ul li {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.container header nav ul button {
+    width: 108px;
+    height: 33px;
+    background: #FF346D;
+    border-radius: 10px;
+    font-weight: 400;
+    font-size: 15px;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.container header nav ul button:hover {
+    transform: translateY(-3px);
+    transition: 0.3s;
+}
+
+.container header .header {
+    width: 1150px;
+    margin: 0px auto;
+    margin-top: 127px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container header .header .headerTItle {
+    width: 673px;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 84px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 2.16px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.container header .header .headerInfo {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    color: #E7EFF5;
+    margin-top: 20px;
+}
+
+.container header .header .headerBtn {
+    width: 233.23px;
+    height: 51px;
+    background: #42BDEB;
+    border: 2px solid rgba(66, 189, 235, 0.4);
+    box-shadow: 0px 0px 30px #42BDEB;
+    border-radius: 99px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    margin-top: 52px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.container header .header .headerBtn:hover {
+    transform: translateY(-3px);
+    transition: 0.3s;
+}
+
+.container main {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 0px -19px 25px 6px rgba(19, 27, 31, 0.45);
+    -moz-box-shadow: 0px -19px 25px 6px rgba(19, 27, 31, 0.45);
+    box-shadow: 0px -19px 25px 6px rgba(19, 27, 31, 0.45);
+}
+
+.container main .about {
+    width: 1150px;
+    margin: 0px auto;
+    display: flex;
+    gap: 68px;
+}
+
+.container main .about .aboutInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.container main .about .aboutInfo .aboutInfo_title {
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.container main .about .aboutInfo p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #A7B4C8;
+}
+
+.container main .about .aboutInfo p b {
+    color: #FFFFFF;
+}
+
+.container main .about .aboutInfo p a {
+    color: #4CCAF9;
+    cursor: pointer;
+}
+
+.container main .gallery {
+    width: 1150px;
+    margin: 0px auto;
+    margin-top: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.container main .gallery .galleryTitle {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.container main .gallery .gallerys {
+    width: 1150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container main .gallery .gallerys .gallerysBox1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container main .gallery .gallerys .gallerysBox1 img {
+    cursor: pointer;
+}
+
+.container main .portfolio {
+    width: 1150px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 151px;
+    gap: 99px;
+}
+
+.container main .portfolio .portfolioTitle {
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 42px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.container main .portfolio .portfolios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1150px;
+    gap: 20px;
+}
+
+.container main .portfolio .portfolios img {
+    max-width: 565px;
+    min-width: 565px;
+    max-height: 290px;
+    border-radius: 10px;
+    border: 1px solid #FFFFFF;
+}

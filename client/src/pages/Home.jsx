@@ -11,6 +11,14 @@ import uzum from '../images/uzum.png'
 import tesla from '../images/tesla.png'
 import apple from '../images/apple.png'
 import spesX from '../images/spesX.png'
+import telegramBot from '../images/serviceBot.svg.svg'
+import servicesWeb from '../images/service-web.svg.svg'
+import telegram from '../images/telegram.svg'
+import whatsapp from '../images/whatsapp.svg'
+import internet from '../images/internet.svg'
+import discord from '../images/discord.svg'
+import line from '../images/line.svg'
+
 
 
 export default function Home() {
@@ -82,7 +90,44 @@ export default function Home() {
                     </div>
                 </div>
                 <div className="services">
-                    
+                    <span className="servicesTitle">Our Core Services</span>
+                    <div className="servicesMain">
+                        <div className="servis">
+                            <div className="servisInfo">
+                                <span className="servisInfo_Title">Website Development</span>
+                                <p>Productive and engaging web solutions for smarter work and improved customer service</p>
+                                <div className="servisInfoBtns">
+                                    <button><img src={internet} alt="" /></button>
+                                </div>
+                            </div>
+                            <img className='servisImg' src={servicesWeb} alt="" />
+                        </div>
+                        <div className="servis">
+                            <div className="servisInfo">
+                                <span className="servisInfo_Title">Telegram Bot Development</span>
+                                <p>Native, hybrid, and cross-platform mobile apps for consumer-facing and corporate environments.</p>
+                                <div className="servisInfoBtns">
+                                    <button><img src={telegram} alt="" /></button>
+                                    <button><img src={discord} alt="" /></button>
+                                    <button><img src={whatsapp} alt="" /></button>
+                                </div>
+                            </div>
+                            <img className='servisImg' src={telegramBot} alt="" />
+                        </div>
+                        <div className="software">
+                            <span className="softwareTitle">Software Development Process</span>
+                            <img src={line} alt="" />
+                            <div className="softwareMain">
+                                <div className="softwareMainStructura">
+                                    <div className="softwareMainStructuraInfo">
+                                        <span>Discover</span>
+                                        <p>We shape brands through exploration, applying in-depth research to challenge assumptions at every turn.</p>
+                                    </div>
+                                    <img src="" alt="" className="softwareMainStructuraImg" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </main>
         </div>

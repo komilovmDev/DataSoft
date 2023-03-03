@@ -18,7 +18,11 @@ import whatsapp from '../images/whatsapp.svg'
 import internet from '../images/internet.svg'
 import discord from '../images/discord.svg'
 import line from '../images/line.svg'
-
+import soft1 from '../images/soft1.svg'
+import soft2 from '../images/soft2.svg'
+import soft3 from '../images/soft3.svg'
+import soft4 from '../images/soft4.svg'
+ 
 
 
 export default function Home() {
@@ -104,7 +108,7 @@ export default function Home() {
                         </div>
                         <div className="servis">
                             <div className="servisInfo">
-                                <span className="servisInfo_Title">Telegram Bot Development</span>
+                                <span className="servisInfo_Title">Bot Development</span>
                                 <p>Native, hybrid, and cross-platform mobile apps for consumer-facing and corporate environments.</p>
                                 <div className="servisInfoBtns">
                                     <button><img src={telegram} alt="" /></button>
@@ -116,14 +120,35 @@ export default function Home() {
                         </div>
                         <div className="software">
                             <span className="softwareTitle">Software Development Process</span>
-                            <img src={line} alt="" />
                             <div className="softwareMain">
-                                <div className="softwareMainStructura">
+                                <img className='line' src={line} alt="" />
+                                <div className="softwareMainStructura left">
                                     <div className="softwareMainStructuraInfo">
                                         <span>Discover</span>
                                         <p>We shape brands through exploration, applying in-depth research to challenge assumptions at every turn.</p>
                                     </div>
-                                    <img src="" alt="" className="softwareMainStructuraImg" />
+                                    <img src={soft1} alt="" className="softwareMainStructuraImg" />
+                                </div>
+                                <div className="softwareMainStructura right">
+                                    <div className="softwareMainStructuraInfo">
+                                        <span>Design</span>
+                                        <p>We shape brands through exploration, applying in-depth research to challenge assumptions at every turn.</p>
+                                    </div>
+                                    <img src={soft2} alt="" className="softwareMainStructuraImg" />
+                                </div>
+                                <div className="softwareMainStructura left">
+                                    <div className="softwareMainStructuraInfo">
+                                        <span>Build</span>
+                                        <p>We shape brands through exploration, applying in-depth research to challenge assumptions at every turn.</p>
+                                    </div>
+                                    <img src={soft3} alt="" className="softwareMainStructuraImg" />
+                                </div>
+                                <div className="softwareMainStructura right">
+                                    <div className="softwareMainStructuraInfo">
+                                        <span>Deliver</span>
+                                        <p>We shape brands through exploration, applying in-depth research to challenge assumptions at every turn.</p>
+                                    </div>
+                                    <img src={soft4} alt="" className="softwareMainStructuraImg" />
                                 </div>
                             </div>
                         </div>

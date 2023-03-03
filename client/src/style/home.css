@@ -325,3 +325,79 @@
     width: 20px;
     height: 20px;
 }
+
+.container main .software {
+    width: 1150px;
+    margin: 0px auto;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 101px;
+    position: relative;
+}
+
+.container main .software .softwareTitle {
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 42px;
+    color: #FFFFFF;
+}
+
+.container main .software .softwareMain {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+}
+
+.container main .software .softwareMain .line {
+    position: absolute;
+    left: -180px;
+}
+
+.container main .software .softwareMain .softwareMainStructura {
+    width: 900px;
+    height: 155.53px;
+    background: #243137;
+    border-radius: 20px;
+    display: flex;
+    position: relative;
+}
+
+.container main .software .softwareMain .softwareMainStructura .softwareMainStructuraInfo {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.container main .software .softwareMain .softwareMainStructura .softwareMainStructuraInfo span {
+    font-weight: 500;
+    font-size: 26px;
+    color: #FFFFFF;
+}
+
+.container main .software .softwareMain .softwareMainStructura .softwareMainStructuraInfo p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #A7B4C8;
+}
+
+.container main .software .softwareMain .softwareMainStructura img {
+    position: absolute;
+    right: 61px;
+    top: 14px;
+}
+
+.right {
+    transform: translateX(-106px);
+}
+
+.left {
+    transform: translateX(104px);
+}

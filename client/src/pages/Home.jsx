@@ -22,7 +22,8 @@ import soft1 from '../images/soft1.svg'
 import soft2 from '../images/soft2.svg'
 import soft3 from '../images/soft3.svg'
 import soft4 from '../images/soft4.svg'
- 
+import datalogo from '../images/datalogo.png'
+
 
 
 export default function Home() {
@@ -30,7 +31,7 @@ export default function Home() {
         <div className="container">
             <header>
                 <nav className='con'>
-                    <img src={logo} alt="" />
+                    <img src={datalogo} alt="" />
                     <ul>
                         <li>About Us</li>
                         <li>Service</li>
@@ -152,9 +153,44 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
+                        <div className="contact">
+                            <span className="contactTitle">Tell us about your project</span>
+                            <div className="contactMain">
+                                <div className="contactMainInfos">
+                                    <input type="text" placeholder='First name' />
+                                    <input type="text" placeholder='Last name' />
+                                    <input type="text" placeholder='Email' />
+                                    <input type="text" placeholder='Phone' />
+                                    <select name="" id="">
+                                        <option value="" selected disabled hidden>Budget</option>
+                                        <option value="">100$</option>
+                                        <option value="">100$-300$</option>
+                                        <option value="">300$-700$</option>
+                                        <option value="">700$-1000$</option>
+                                        <option value="">1000$-2000$</option>
+                                        <option value="">2000$+</option>
+                                    </select>
+                                    <select name="" id="">
+                                        <option value="" selected disabled hidden>Where did you hear about us?</option>
+                                        <option value="">Google</option>
+                                        <option value="">Instagram</option>
+                                        <option value="">Telegram</option>
+                                    </select>
+                                </div>
+                                <textarea name="" id="" cols="30" rows="10" placeholder='Message'></textarea>
+                                <button>Submit</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </main>
+            <footer>
+                <div className="footerCon">
+                    <div className="footerTop">
+                        
+                    </div>
+                </div>
+            </footer>
         </div>
     )
 }

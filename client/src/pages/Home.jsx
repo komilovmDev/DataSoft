@@ -220,7 +220,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="footerBottom">  
-                        <span>2023 AxelHub, All rights reserved</span>
+                        <span>2023 DataSoft, All rights reserved</span>
                         <img src={datalogo} alt="" />
                     </div>
                 </div>

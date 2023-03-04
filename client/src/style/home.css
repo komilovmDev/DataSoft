@@ -439,7 +439,6 @@
     background-size: cover;
 }
 
-
 .container main .contact .contactMain .contactMainInfos {}
 
 .container main .contact .contactMain .contactMainInfos input {
@@ -530,4 +529,111 @@
 .container main .contact .contactMain button:hover {
     transform: translateY(-3px);
     transition: 0.3s;
+}
+
+.container footer {
+    width: 100%;
+    height: 350px;
+    margin-top: 57px;
+    background-color: #243137;
+}
+
+.container footer .footerCon {
+    width: 1150px;
+    margin: 0px auto;
+}
+
+.container footer .footerCon .footerTop {
+    display: flex;
+    padding-top: 50px;
+    gap: 52px;
+}
+
+.container footer .footerCon .footerTop .footerContact {
+    width: 600px;
+    height: 170px;
+    background: #131B1F;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 15px;
+}
+
+.container footer .footerCon .footerTop .footerContact a {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.container footer .footerCon .footerTop .footerContact a button {
+    width: 30px;
+    height: 30px;
+    background: #243137;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container footer .footerCon .footerTop .footerContact a span {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 21px;
+    color: #4CCAF9;
+}
+
+.container footer .footerCon .footerTop .footerInfos {
+    display: flex;
+    gap: 60px;
+}
+
+.container footer .footerCon .footerTop .footerInfos ul {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.container footer .footerCon .footerTop .footerInfos ul span {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.container footer .footerCon .footerTop .footerInfos ul li {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    color: #FFFFFF;
+    transition: 0.2s ease;
+    padding-bottom: 1px;
+}
+
+.container footer .footerCon .footerTop .footerInfos ul li:hover {
+    border-bottom: 1px solid #4CCAF9;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.container footer .footerCon .footerBottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 37px;
+    border-top: 1px solid #6E7A8066;
+    margin-top: 30px;
+}
+
+.container footer .footerCon .footerBottom img {
+    width: 65px;
+    height: 35px;
+}
+
+.container footer .footerCon .footerBottom span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
 }

@@ -637,3 +637,144 @@
     line-height: 19px;
     color: #FFFFFF;
 }
+
+@media screen and (min-width:768px) and (max-width: 1024px){
+    .container header {
+        width: 100%;
+        background-image: url(../images/headerBcMIni.png);
+        background-size: cover;
+        padding: 0px 20px;
+    }
+
+    .container header nav {
+        width: 100%;
+    }
+
+    .container main {
+        width: 100%;
+    }
+
+    .container main .about {
+        width: 100%;
+        flex-direction: column;
+        padding: 0px 40px;
+        align-items: center;
+    }
+
+    .container main .about img {
+        width: 400px;
+    }
+
+    .container main .gallery {
+        width: 100%;
+        margin-top: 101px;
+    }
+
+    .container main .gallery .gallerys {
+        padding: 0px 40px;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .container main .gallery .gallerys .gallerysBox1 {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .container main .gallery .gallerys .gallerysBox1 img {
+        max-width: 25%;
+    }
+    
+    .container main .portfolio {
+        width: 100%;
+    }
+
+    .container main .portfolio .portfolios {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .container main .portfolio .portfolios img {
+        max-width: 427px;
+        min-width: 427px;
+        max-height: 290px;
+    }
+    
+    .container main .services {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container main .services .servicesMain {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container main .services .servicesMain .servis  {
+        width: 875px;
+    }
+
+    .container main .services .servicesMain .servis .servisInfo {
+        width: 40%;
+        z-index: 1;
+    }
+
+    .container main .services .servicesMain .servis .servisImg  {
+        right: 90px;
+        bottom: 0;
+    }
+    
+    .container main .software {
+        width: 100%;
+    }
+
+    .container main .software .softwareMain  {
+        gap: 80px;
+    }
+
+    .container main .software .softwareMain .line  {
+        display: none;
+    }
+
+    .right {
+        transform: translateX(0px);
+    }
+    
+    .left {
+        transform: translateX(0px);
+    }
+
+    .container main .contact {
+        width: 100%;
+    }
+
+    .container main .contact .contactMain {
+        width: 875px;
+        padding: 50px 20px;
+    }
+
+    .container footer {
+        width: 100%;
+    }
+
+    .container footer .footerCon {
+        width: 100%;
+    }
+    
+    .container footer .footerCon .footerTop {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container footer .footerCon .footerTop .footerContact {
+        width: 400px;
+    }
+    
+    .container footer .footerCon .footerBottom  {
+        width: 100%;
+        padding: 30px 20px;
+        align-items: center;
+    }
+}

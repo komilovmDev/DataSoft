@@ -36,6 +36,17 @@
     gap: 30px;
 }
 
+.container header nav .activeBurger {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.container header nav .navMenuBtn {
+    display: none;
+    color: #FFFFFF;
+}
+
 .container header nav ul li {
     color: #FFFFFF;
     font-weight: 400;
@@ -638,7 +649,7 @@
     color: #FFFFFF;
 }
 
-@media screen and (min-width:768px) and (max-width: 1024px){
+@media screen and (min-width:768px) and (max-width: 1024px) {
     .container header {
         width: 100%;
         background-image: url(../images/headerBcMIni.png);
@@ -675,6 +686,7 @@
         justify-content: center;
         flex-direction: column;
     }
+
     .container main .gallery .gallerys .gallerysBox1 {
         width: 100%;
         flex-direction: row;
@@ -684,7 +696,7 @@
     .container main .gallery .gallerys .gallerysBox1 img {
         max-width: 25%;
     }
-    
+
     .container main .portfolio {
         width: 100%;
     }
@@ -699,20 +711,20 @@
         min-width: 427px;
         max-height: 290px;
     }
-    
+
     .container main .services {
         width: 100%;
         justify-content: center;
         align-items: center;
     }
-    
+
     .container main .services .servicesMain {
         width: 100%;
         justify-content: center;
         align-items: center;
     }
-    
-    .container main .services .servicesMain .servis  {
+
+    .container main .services .servicesMain .servis {
         width: 875px;
     }
 
@@ -721,27 +733,27 @@
         z-index: 1;
     }
 
-    .container main .services .servicesMain .servis .servisImg  {
+    .container main .services .servicesMain .servis .servisImg {
         right: 90px;
         bottom: 0;
     }
-    
+
     .container main .software {
         width: 100%;
     }
 
-    .container main .software .softwareMain  {
+    .container main .software .softwareMain {
         gap: 80px;
     }
 
-    .container main .software .softwareMain .line  {
+    .container main .software .softwareMain .line {
         display: none;
     }
 
     .right {
         transform: translateX(0px);
     }
-    
+
     .left {
         transform: translateX(0px);
     }
@@ -762,7 +774,7 @@
     .container footer .footerCon {
         width: 100%;
     }
-    
+
     .container footer .footerCon .footerTop {
         align-items: center;
         justify-content: center;
@@ -771,14 +783,162 @@
     .container footer .footerCon .footerTop .footerContact {
         width: 400px;
     }
-    
-    .container footer .footerCon .footerBottom  {
+
+    .container footer .footerCon .footerBottom {
         width: 100%;
         padding: 30px 20px;
         align-items: center;
     }
 }
 
-@media screen and (max-widht:414px) and (min-width:360px) {
+@media screen and (max-width:414px) and (min-width:360px) {
+    .container {
+        width: 100%;
+    }
+
+    .container header {
+        width: 100%;
+        background-image: url(../images/mobileBacgrounf.png);
+    }
+
+    .container header nav {
+        width: 100%;
+        padding: 0px 20px;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #131B1F;
+    }
+
+    .container header nav ul {
+        width: 100%;
+        height: 100vh;
+        bottom: 0;
+        background-color: #131B1F;
+        flex-direction: column;
+        position: absolute;
+        padding: 30px;
+        justify-content: start;
+        align-items: start;
+        left: 0;
+        display: none;
+    }
+
+    .container header nav .navMenuBtn {
+        display: inline;
+        z-index: 1;
+    }
+
+    .container header nav .activeBurger {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        top: 76px;
+        background-color: #131B1F;
+        flex-direction: column;
+        position: absolute;
+        padding: 30px;
+        justify-content: start;
+        align-items: start;
+        left: 0;
+    }
+
+    .container header nav ul li {
+        font-size: 24px;
+    }
+
+    .container header nav ul button {
+        width: 90%;
+        height: 53px;
+        box-shadow: 0px 0px 30px #ff346d;
+        font-size: 24px;
+    }
+
+    .container header .header {
+        width: 100%;
+        margin-top: 24px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container header .header .headerTItle {
+        width: 336px;
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 42px;
+        color: #FFFFFF;
+        text-align: center;
+    }
+
+    .container main .about {
+        width: 100%;
+        padding: 0px 20px;
+        flex-direction: column;
+    }
+
+    .container main .gallery {
+        width: 100%;
+    }
+
+    .container main .gallery .gallerys {
+        flex-direction: column;
+    }
     
+    .container main .portfolio {
+        padding: 0px 20px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .container main .portfolio .portfolios {
+        width: 100%;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container main .portfolio .portfolios a {
+        width: 100%;
+    }
+
+    .container main .portfolio .portfolios a img {
+        max-width: 100%;
+        min-width: 100%;
+        max-height: auto;
+    }
+
+    .container main .services {
+        width: 100%;
+    }
+
+    .container main .services .servicesMain {
+        width: 100%;
+        padding: 0px 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container main .services .servicesMain .servis {
+        width: 100%;
+    }
+
+    .container main .services .servicesMain .servis .servisInfo {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        z-index: 2;
+    }
+
+    .container main .services .servicesMain .servis .servisInfo p {
+        width: 100%;
+    }
+
+    .container main .services .servicesMain .servis .servisInfo .servisInfo_Title {
+        width: 100%;
+    }
+    
+    .container main .services .servicesMain .servis .servisImg {
+        width: 157px;
+    }
 }

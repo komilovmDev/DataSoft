@@ -26,16 +26,30 @@ import datalogo from '../images/datalogo.png'
 import gps from '../images/gps.svg'
 import phone from '../images/phone.svg'
 import sms from '../images/sms.svg'
+import {HiOutlineMenuAlt1} from 'react-icons/hi'
+import { useState } from 'react'
 
 
 
 export default function Home() {
+
+
+    const [burger, setBurger ] = useState('')
+    function isOpen() {
+        if (burger == '') {
+            setBurger('activeBurger')
+        }else {
+            setBurger('')
+        }
+    }
+
     return (
         <div className="container">
             <header>
                 <nav className='con'>
                     <img src={datalogo} alt="" />
-                    <ul>
+                    <HiOutlineMenuAlt1 className='navMenuBtn' size={'36px'} onClick={isOpen}/>
+                    <ul className={burger}>
                         <li>About Us</li>
                         <li>Service</li>
                         <li>Portfolio</li>

@@ -778,3 +778,7 @@
         align-items: center;
     }
 }
+
+@media screen and (max-widht:414px) and (min-width:360px) {
+    
+}

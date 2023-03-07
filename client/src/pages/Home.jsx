@@ -122,68 +122,68 @@ export default function Home() {
                             </div>
                             <img className='servisImg' src={telegramBot} alt="" />
                         </div>
-                        <div className="software">
-                            <span className="softwareTitle">Software Development Process</span>
-                            <div className="softwareMain">
-                                <img className='line' src={line} alt="" />
-                                <div className="softwareMainStructura left">
-                                    <div className="softwareMainStructuraInfo">
-                                        <span>Discover</span>
-                                        <p>We shape brands through exploration, applying in-depth research to challenge assumptions at every turn.</p>
-                                    </div>
-                                    <img src={soft1} alt="" className="softwareMainStructuraImg" />
-                                </div>
-                                <div className="softwareMainStructura right">
-                                    <div className="softwareMainStructuraInfo">
-                                        <span>Design</span>
-                                        <p>We shape brands through exploration, applying in-depth research to challenge assumptions at every turn.</p>
-                                    </div>
-                                    <img src={soft2} alt="" className="softwareMainStructuraImg" />
-                                </div>
-                                <div className="softwareMainStructura left">
-                                    <div className="softwareMainStructuraInfo">
-                                        <span>Build</span>
-                                        <p>We shape brands through exploration, applying in-depth research to challenge assumptions at every turn.</p>
-                                    </div>
-                                    <img src={soft3} alt="" className="softwareMainStructuraImg" />
-                                </div>
-                                <div className="softwareMainStructura right">
-                                    <div className="softwareMainStructuraInfo">
-                                        <span>Deliver</span>
-                                        <p>We shape brands through exploration, applying in-depth research to challenge assumptions at every turn.</p>
-                                    </div>
-                                    <img src={soft4} alt="" className="softwareMainStructuraImg" />
-                                </div>
+                    </div>
+                </div>
+                <div className="software">
+                    <span className="softwareTitle">Software Development Process</span>
+                    <div className="softwareMain">
+                        <img className='line' src={line} alt="" />
+                        <div className="softwareMainStructura left">
+                            <div className="softwareMainStructuraInfo">
+                                <span>Discover</span>
+                                <p>We shape brands through exploration, applying in-depth research to challenge assumptions at every turn.</p>
                             </div>
+                            <img src={soft1} alt="" className="softwareMainStructuraImg" />
                         </div>
-                        <div className="contact">
-                            <span className="contactTitle">Tell us about your project</span>
-                            <div className="contactMain">
-                                <div className="contactMainInfos">
-                                    <input type="text" placeholder='First name' />
-                                    <input type="text" placeholder='Last name' />
-                                    <input type="text" placeholder='Email' />
-                                    <input type="text" placeholder='Phone' />
-                                    <select name="" id="">
-                                        <option value="" selected disabled hidden>Budget</option>
-                                        <option value="">100$</option>
-                                        <option value="">100$-300$</option>
-                                        <option value="">300$-700$</option>
-                                        <option value="">700$-1000$</option>
-                                        <option value="">1000$-2000$</option>
-                                        <option value="">2000$+</option>
-                                    </select>
-                                    <select name="" id="">
-                                        <option value="" selected disabled hidden>Where did you hear about us?</option>
-                                        <option value="">Google</option>
-                                        <option value="">Instagram</option>
-                                        <option value="">Telegram</option>
-                                    </select>
-                                </div>
-                                <textarea name="" id="" cols="30" rows="10" placeholder='Message'></textarea>
-                                <button>Submit</button>
+                        <div className="softwareMainStructura right">
+                            <div className="softwareMainStructuraInfo">
+                                <span>Design</span>
+                                <p>We shape brands through exploration, applying in-depth research to challenge assumptions at every turn.</p>
                             </div>
+                            <img src={soft2} alt="" className="softwareMainStructuraImg" />
                         </div>
+                        <div className="softwareMainStructura left">
+                            <div className="softwareMainStructuraInfo">
+                                <span>Build</span>
+                                <p>We shape brands through exploration, applying in-depth research to challenge assumptions at every turn.</p>
+                            </div>
+                            <img src={soft3} alt="" className="softwareMainStructuraImg" />
+                        </div>
+                        <div className="softwareMainStructura right">
+                            <div className="softwareMainStructuraInfo">
+                                <span>Deliver</span>
+                                <p>We shape brands through exploration, applying in-depth research to challenge assumptions at every turn.</p>
+                            </div>
+                            <img src={soft4} alt="" className="softwareMainStructuraImg" />
+                        </div>
+                    </div>
+                </div>
+                <div className="contact">
+                    <span className="contactTitle">Tell us about your project</span>
+                    <div className="contactMain">
+                        <div className="contactMainInfos">
+                            <input type="text" placeholder='First name' />
+                            <input type="text" placeholder='Last name' />
+                            <input type="text" placeholder='Email' />
+                            <input type="text" placeholder='Phone' />
+                            <select name="" id="">
+                                <option value="" selected disabled hidden>Budget</option>
+                                <option value="">100$</option>
+                                <option value="">100$-300$</option>
+                                <option value="">300$-700$</option>
+                                <option value="">700$-1000$</option>
+                                <option value="">1000$-2000$</option>
+                                <option value="">2000$+</option>
+                            </select>
+                            <select name="" id="">
+                                <option value="" selected disabled hidden>Where did you hear about us?</option>
+                                <option value="">Google</option>
+                                <option value="">Instagram</option>
+                                <option value="">Telegram</option>
+                            </select>
+                        </div>
+                        <textarea name="" id="" cols="30" rows="10" placeholder='Message'></textarea>
+                        <button>Submit</button>
                     </div>
                 </div>
             </main>
@@ -219,7 +219,7 @@ export default function Home() {
                             </ul>
                         </div>
                     </div>
-                    <div className="footerBottom">  
+                    <div className="footerBottom">
                         <span>2023 DataSoft, All rights reserved</span>
                         <img src={datalogo} alt="" />
                     </div>

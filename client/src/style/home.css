@@ -882,7 +882,7 @@
     .container main .gallery .gallerys {
         flex-direction: column;
     }
-    
+
     .container main .portfolio {
         padding: 0px 20px;
         width: 100%;
@@ -890,7 +890,7 @@
         align-items: center;
         justify-content: center;
     }
-    
+
     .container main .portfolio .portfolios {
         width: 100%;
         flex-wrap: nowrap;
@@ -937,8 +937,137 @@
     .container main .services .servicesMain .servis .servisInfo .servisInfo_Title {
         width: 100%;
     }
-    
+
     .container main .services .servicesMain .servis .servisImg {
         width: 157px;
+    }
+
+    .container main .software {
+        width: 100%;
+    }
+
+    .container main .software .softwareTitle {
+        text-align: center;
+        padding: 0px 20px;
+    }
+
+    .container main .software .softwareMain {
+        padding: 0px 20px;
+        width: 100%;
+        gap: 50px;
+    }
+
+    .container main .software .softwareMain .softwareMainStructura {
+        width: 100%;
+        height: auto;
+        padding-bottom: 22px;
+    }
+
+    .container main .software .softwareMain .softwareMainStructura .softwareMainStructuraInfo {
+        width: 100%;
+        padding-right: 30px;
+    }
+
+    .container main .software .softwareMain .softwareMainStructura img {
+        width: 76px;
+    }
+
+    .container main .software .softwareMain .line {
+        display: none;
+    }
+
+    .right {
+        transform: translateX(0);
+    }
+
+    .left {
+        transform: translateX(0);
+    }
+
+    .container main .contact {
+        width: 100%;
+        padding: 0px 20px;
+    }
+
+    .container main .contact .contactTitle {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 32px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .container main .contact .contactMain {
+        width: 100%;
+        height: auto;
+        padding: 40px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container main .contact .contactMain .contactMainInfos {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .container main .contact .contactMain .contactMainInfos input {
+        width: 100%;
+    }
+
+    .container main .contact .contactMain .contactMainInfos select {
+        width: 100%;
+    }
+
+    .container main .contact .contactMain textarea {
+        max-width: 100%;
+        max-height: 100px;
+        min-width: 100%;
+        min-height: 100px;
+    }
+    
+    .container main .contact .contactMain button  {
+        width: 250px;
+        height: 53px;
+    }
+
+    .container footer {
+        width: 100%;
+        height: auto;
+    }
+
+    .container footer .footerCon {
+        width: 100%;
+        padding: 0px 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container footer .footerCon .footerTop {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        gap: 30px;
+    }
+
+    .container footer .footerCon .footerTop .footerContact {
+        width: 100%;
+        background: transparent;
+        border-bottom: 2px solid rgba(110, 122, 128, 0.4);
+        border-radius: 0px;
+        padding: 0px 0px;
+    }
+
+    .container footer .footerCon .footerBottom {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-top: 2px solid rgba(110, 122, 128, 0.4);
     }
 }

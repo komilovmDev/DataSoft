@@ -28,35 +28,18 @@ import phone from '../images/phone.svg'
 import sms from '../images/sms.svg'
 import {HiOutlineMenuAlt1} from 'react-icons/hi'
 import { useState } from 'react'
-
+import Navbar from './Navbar'
+import Footer from './Footer'
 
 
 export default function Home() {
 
 
-    const [burger, setBurger ] = useState('')
-    function isOpen() {
-        if (burger == '') {
-            setBurger('activeBurger')
-        }else {
-            setBurger('')
-        }
-    }
 
     return (
         <div className="container">
             <header>
-                <nav className='con'>
-                    <img src={datalogo} alt="" />
-                    <HiOutlineMenuAlt1 className='navMenuBtn' size={'36px'} onClick={isOpen}/>
-                    <ul className={burger}>
-                        <li>About Us</li>
-                        <li>Service</li>
-                        <li>Portfolio</li>
-                        <li>FAQ's</li>
-                        <button>Contact Us</button>
-                    </ul>
-                </nav>
+                <Navbar/>
                 <div className="header">
                     <span className="headerTItle">Making Software a Reality.</span>
                     <span className="headerInfo">Just Think. We'll do the rest.</span>
@@ -201,44 +184,7 @@ export default function Home() {
                     </div>
                 </div>
             </main>
-            <footer>
-                <div className="footerCon">
-                    <div className="footerTop">
-                        <div className="footerContact">
-                            <a href="" className="footeradress">
-                                <button><img src={phone} alt="" /></button>
-                                <span>+1 (646) 418 9064</span>
-                            </a>
-                            <a href="" className="footeradress">
-                                <button><img src={sms} alt="" /></button>
-                                <span>info@axelhub.com</span>
-                            </a>
-                            <a href="" className="footeradress">
-                                <button><img src={gps} alt="" /></button>
-                                <span>New York (NY), Tampa (FL), Bishkek (KG)</span>
-                            </a>
-                        </div>
-                        <div className="footerInfos">
-                            <ul>
-                                <span>Service</span>
-                                <li>UI/UX Design</li>
-                                <li>Mobile Development</li>
-                                <li>Web Development</li>
-                            </ul>
-                            <ul>
-                                <span>Company</span>
-                                <li>About Us</li>
-                                <li>Career Opportunities</li>
-                                <li>FAQ's</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="footerBottom">
-                        <span>2023 DataSoft, All rights reserved</span>
-                        <img src={datalogo} alt="" />
-                    </div>
-                </div>
-            </footer>
+            <Footer/>
         </div>
     )
 }

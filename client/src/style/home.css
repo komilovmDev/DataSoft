@@ -20,6 +20,7 @@
     margin: 0px auto;
     display: flex;
     justify-content: space-between;
+    z-index: 9;
 }
 
 .container header nav img {
@@ -649,6 +650,85 @@
     color: #FFFFFF;
 }
 
+.container .faqs {
+    width: 1150px;
+    margin: 0px auto;
+    margin-top: 74px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 47px;
+}
+
+.container .faqs .faqsTitle {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 42px;
+    color: #FFFFFF;
+}
+
+.container .faqs .faqss {
+    width: 1150px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .faqs .faq {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.container .faqs .faq button {
+    width: 100%;
+    min-height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 24px;
+    background: #243137;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.container .faqs .faq button span {
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.container .faqs .faq button .plus {
+    width: 30px;
+    height: 30px;
+    background-color: #131B1F;
+    border-radius: 50%;
+}
+
+
+.container .faqs .faq  p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+    border: 2px solid #4ccbf93d;
+    background-color: #243137;
+    border-radius: 5px;
+    padding: 24px 25px;
+}
+
+.container .faqs .faq  p a {
+    color: #4CCAF9;
+    cursor: pointer;
+}
+
+
 @media screen and (min-width:768px) and (max-width: 1024px) {
     .container header {
         width: 100%;
@@ -1015,7 +1095,7 @@
         align-items: center;
         justify-content: center;
     }
-    
+
     .container main .contact .contactMain .contactMainInfos input {
         width: 100%;
     }
@@ -1030,8 +1110,8 @@
         min-width: 100%;
         min-height: 100px;
     }
-    
-    .container main .contact .contactMain button  {
+
+    .container main .contact .contactMain button {
         width: 250px;
         height: 53px;
     }
@@ -1071,3 +1151,4 @@
         border-top: 2px solid rgba(110, 122, 128, 0.4);
     }
 }
+

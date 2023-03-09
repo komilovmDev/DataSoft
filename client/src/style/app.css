@@ -33,3 +33,10 @@ body {
         width: 100%;
     }
 }
+
+/* none class */
+
+
+.none {
+    display: none;
+}

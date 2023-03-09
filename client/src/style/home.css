@@ -1150,5 +1150,29 @@
         padding-bottom: 20px;
         border-top: 2px solid rgba(110, 122, 128, 0.4);
     }
-}
 
+    .container .faqs {
+        width: 100%;
+        padding: 0px 20px;
+    }
+
+    .container .faqs .faqss  {
+        width: 100%;
+    }
+    
+    .container .faqs .faq button {
+        padding: 10px 24px;
+        gap: 10px;
+    }
+
+    .container .faqs .faq button span {
+        text-align: start;
+    }
+
+    .container .faqs .faq button .plus {
+        max-width: 30px;
+        max-height: 30px;
+        min-height: 30px;
+        min-width: 30px;
+    }
+}

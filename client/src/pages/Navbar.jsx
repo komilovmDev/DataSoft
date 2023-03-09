@@ -24,7 +24,7 @@ export default function Navbar() {
                 <Link to='/services'><li>Service</li></Link>
                 <Link to='/portfolio'><li>Portfolio</li></Link>
                 <Link to='/faq'><li>FAQ's</li></Link>
-                <button>Contact Us</button>
+                <Link to='/contact'><button>Contact Us</button></Link>
             </ul>
         </nav>
     )

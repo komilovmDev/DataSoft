@@ -1,4 +1,5 @@
 import {createBrowserRouter , RouterProvider} from 'react-router-dom'
+import Contact from '../pages/Contact'
 import Faq from '../pages/faqs/Faq'
 import Home from '../pages/Home'
 import Portfolio from '../pages/Portfolio'
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
     {
         path: 'faq' ,
         element: <Faq/>
+    },
+    {
+        path: 'contact' ,
+        element: <Contact/>
     }
 ])
 

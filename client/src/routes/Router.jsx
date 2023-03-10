@@ -1,4 +1,5 @@
-import {createBrowserRouter , RouterProvider} from 'react-router-dom'
+import {createBrowserRouter , RouterProvider , redirect} from 'react-router-dom'
+import Found from '../pages/404'
 import About from '../pages/About'
 import Contact from '../pages/Contact'
 import Faq from '../pages/faqs/Faq'
@@ -7,6 +8,10 @@ import Portfolio from '../pages/Portfolio'
 import Service from '../pages/Service'
 
 const router = createBrowserRouter([
+    {
+        path: '*' ,
+        element: <Found/>  
+    } ,
     {
         path: '/' ,
         element: <Home/>

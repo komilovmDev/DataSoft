@@ -1,2 +1,2 @@
 # DataSoft
-Data soft rasmiy web sayti
+Data soft rasmiy web sayti #Frontend

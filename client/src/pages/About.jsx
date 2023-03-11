@@ -17,7 +17,7 @@ export default function About() {
                 <Navbar />
             </header>
             <main>
-                <div className="about" style={{marginTop: '147px'}}>
+                <div className="about" style={{ marginTop: '147px' }}>
                     <div className="aboutInfo">
                         <span className="aboutInfo_title">About us</span>
                         <p><b>We crossed the world to build Axel. Now,

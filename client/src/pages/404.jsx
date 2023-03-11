@@ -3,6 +3,8 @@
 
 export default function Found() {
     return (
-        <h1>not found 404</h1>
+        <div className="notfound">
+            <span>404 | NOT FOUND</span>
+        </div>
     )
 }

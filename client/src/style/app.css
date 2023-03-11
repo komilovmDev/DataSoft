@@ -40,3 +40,21 @@ body {
 .none {
     display: none;
 }
+
+/* 404 found style */
+
+
+.notfound {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a202c;
+}
+
+
+.notfound span {
+    font-size: 18px;
+    color: #a0aec0;
+}

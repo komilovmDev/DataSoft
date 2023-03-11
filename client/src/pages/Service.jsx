@@ -60,7 +60,7 @@ export default function Service() {
                                 <input type="text" placeholder='Phone' />
                                 <select name="" id="">
                                     <option value="" selected disabled hidden>Budget</option>
-                                    <option value="">100$</option>
+                                    <option value="">0$-100$</option>
                                     <option value="">100$-300$</option>
                                     <option value="">300$-700$</option>
                                     <option value="">700$-1000$</option>

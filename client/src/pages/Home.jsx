@@ -1,12 +1,5 @@
 import logo from '../images/Logo.svg.svg'
 import aboutImg from '../images/about.svg'
-import gallery1 from '../images/galery1.png'
-import gallery2 from '../images/galarey2.png'
-import gallery3 from '../images/galery3.png'
-import gallery4 from '../images/galery4.png'
-import gallery5 from '../images/galery5.png'
-import gallery6 from '../images/galery6.png'
-import gallery7 from '../images/galery7.png'
 import uzum from '../images/uzum.png'
 import tesla from '../images/tesla.png'
 import apple from '../images/apple.png'
@@ -26,20 +19,18 @@ import datalogo from '../images/datalogo.png'
 import gps from '../images/gps.svg'
 import phone from '../images/phone.svg'
 import sms from '../images/sms.svg'
-import {HiOutlineMenuAlt1} from 'react-icons/hi'
+import { HiOutlineMenuAlt1 } from 'react-icons/hi'
 import { useState } from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
-
+import ImgGallary from './Gallary'
 
 export default function Home() {
-
-
 
     return (
         <div className="container">
             <header>
-                <Navbar/>
+                <Navbar />
                 <div className="header">
                     <span className="headerTItle">Making Software a Reality.</span>
                     <span className="headerInfo">Just Think. We'll do the rest.</span>
@@ -69,7 +60,7 @@ export default function Home() {
                 </div>
                 <div className="gallery">
                     <span className="galleryTitle">Gallery</span>
-                    <div className="gallerys">
+                    {/* <div className="gallerys">
                         <div className="gallerysBox1">
                             <img src={gallery2} alt="" />
                             <img src={gallery5} alt="" />
@@ -83,7 +74,8 @@ export default function Home() {
                             <img src={gallery3} alt="" />
                             <img src={gallery7} alt="" />
                         </div>
-                    </div>
+                    </div> */}
+                    <ImgGallary/>
                 </div>
                 <div className="portfolio">
                     <span className="portfolioTitle">Our Projects</span>
@@ -184,7 +176,7 @@ export default function Home() {
                     </div>
                 </div>
             </main>
-            <Footer/>
+            <Footer />
         </div>
     )
 }

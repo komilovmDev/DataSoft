@@ -8,6 +8,7 @@ import gallery4 from '../images/galery4.png'
 import gallery5 from '../images/galery5.png'
 import gallery6 from '../images/galery6.png'
 import gallery7 from '../images/galery7.png'
+import ImgGallary from './Gallary'
 
 
 export default function About() {
@@ -39,21 +40,7 @@ export default function About() {
                 </div>
                 <div className="gallery">
                     <span className="galleryTitle">Gallery</span>
-                    <div className="gallerys">
-                        <div className="gallerysBox1">
-                            <img src={gallery2} alt="" />
-                            <img src={gallery5} alt="" />
-                        </div>
-                        <div className="gallerysBox1">
-                            <img src={gallery1} alt="" />
-                            <img src={gallery4} alt="" />
-                            <img src={gallery6} alt="" />
-                        </div>
-                        <div className="gallerysBox1">
-                            <img src={gallery3} alt="" />
-                            <img src={gallery7} alt="" />
-                        </div>
-                    </div>
+                    <ImgGallary/>
                 </div>
                 <div className="contact">
                     <span className="contactTitle">Tell us about your project</span>

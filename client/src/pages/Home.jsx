@@ -60,21 +60,6 @@ export default function Home() {
                 </div>
                 <div className="gallery">
                     <span className="galleryTitle">Gallery</span>
-                    {/* <div className="gallerys">
-                        <div className="gallerysBox1">
-                            <img src={gallery2} alt="" />
-                            <img src={gallery5} alt="" />
-                        </div>
-                        <div className="gallerysBox1">
-                            <img src={gallery1} alt="" />
-                            <img src={gallery4} alt="" />
-                            <img src={gallery6} alt="" />
-                        </div>
-                        <div className="gallerysBox1">
-                            <img src={gallery3} alt="" />
-                            <img src={gallery7} alt="" />
-                        </div>
-                    </div> */}
                     <ImgGallary/>
                 </div>
                 <div className="portfolio">

@@ -1,12 +1,5 @@
 import React, { useState } from "react"
 import Masonry, {ResponsiveMasonry} from "react-responsive-masonry"
-import gallery1 from '../images/galery1.png'
-import gallery2 from '../images/galarey2.png'
-import gallery3 from '../images/galery3.png'
-import gallery4 from '../images/galery4.png'
-import gallery5 from '../images/galery5.png'
-import gallery6 from '../images/galery6.png'
-import gallery7 from '../images/galery7.png'
 import {IoMdClose} from 'react-icons/io'
 
 const images = [

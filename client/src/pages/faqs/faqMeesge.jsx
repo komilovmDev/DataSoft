@@ -3,7 +3,7 @@ import {BiMinus} from 'react-icons/bi'
 import { useState } from 'react'
 
 
-export default function FaqMessage({question , answer}) {
+export default function FaqMessage({id ,question , answer}) {
 
     const [isOpen, setIsOpen] = useState('none')
     const [icon , setIcon] = useState(<BsPlus className='plus' size='20px' color="#FFFFFF" />)

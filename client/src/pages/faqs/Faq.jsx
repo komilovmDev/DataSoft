@@ -1,60 +1,21 @@
 import Navbar from '../Navbar'
 import Footer from '../Footer'
 import FaqMessage from './faqMeesge'
-
+import { useEffect, useState } from 'react'
+import axios from 'axios'
 
 export default function Faq() {
 
-    const faqs = [
-        {
-            question: 'Who is DataSoft?',
-            answer: "Axel was founded in 2018 by Phil Kravtsov and Adi Nasirdinov who’s mission was to grow the next generation of software developers in the untapped talent pool of central Asia. Initially discovering each other online, Phil (a front-end mobile developer from New York) and Adi (a back-end developer from Bishkek) thought they could bring their talents and personalities together to build a software development experience for the world like no other. Phil moved to Kyrgyzstan for two years to help Adi build Axel. To read the full story, click here."
-        },
-        {
-            question: 'Who are Axel’s clients?',
-            answer: "Axel was founded in 2018 by Phil Kravtsov and Adi Nasirdinov who’s mission was to grow the next generation of software developers in the untapped talent pool of central Asia. Initially discovering each other online, Phil (a front-end mobile developer from New York) and Adi (a back-end developer from Bishkek) thought they could bring their talents and personalities together to build a software development experience for the world like no other. Phil moved to Kyrgyzstan for two years to help Adi build Axel. To read the full story, click here."
-        },
-        {
-            question: 'Total project staff?',
-            answer: "Axel was founded in 2018 by Phil Kravtsov and Adi Nasirdinov who’s mission was to grow the next generation of software developers in the untapped talent pool of central Asia. Initially discovering each other online, Phil (a front-end mobile developer from New York) and Adi (a back-end developer from Bishkek) thought they could bring their talents and personalities together to build a software development experience for the world like no other. Phil moved to Kyrgyzstan for two years to help Adi build Axel. To read the full story, click here."
-        },
-        {
-            question: 'Where do employees work?',
-            answer: "Axel was founded in 2018 by Phil Kravtsov and Adi Nasirdinov who’s mission was to grow the next generation of software developers in the untapped talent pool of central Asia. Initially discovering each other online, Phil (a front-end mobile developer from New York) and Adi (a back-end developer from Bishkek) thought they could bring their talents and personalities together to build a software development experience for the world like no other. Phil moved to Kyrgyzstan for two years to help Adi build Axel. To read the full story, click here."
-        },
-        {
-            question: 'Are you an American company?',
-            answer: "Axel was founded in 2018 by Phil Kravtsov and Adi Nasirdinov who’s mission was to grow the next generation of software developers in the untapped talent pool of central Asia. Initially discovering each other online, Phil (a front-end mobile developer from New York) and Adi (a back-end developer from Bishkek) thought they could bring their talents and personalities together to build a software development experience for the world like no other. Phil moved to Kyrgyzstan for two years to help Adi build Axel. To read the full story, click here."
-        },
-        {
-            question: 'How does Axel recruit and hire its developers?',
-            answer: "Axel was founded in 2018 by Phil Kravtsov and Adi Nasirdinov who’s mission was to grow the next generation of software developers in the untapped talent pool of central Asia. Initially discovering each other online, Phil (a front-end mobile developer from New York) and Adi (a back-end developer from Bishkek) thought they could bring their talents and personalities together to build a software development experience for the world like no other. Phil moved to Kyrgyzstan for two years to help Adi build Axel. To read the full story, click here."
-        },
-        {
-            question: 'Will you sign my NDA?',
-            answer: "Axel was founded in 2018 by Phil Kravtsov and Adi Nasirdinov who’s mission was to grow the next generation of software developers in the untapped talent pool of central Asia. Initially discovering each other online, Phil (a front-end mobile developer from New York) and Adi (a back-end developer from Bishkek) thought they could bring their talents and personalities together to build a software development experience for the world like no other. Phil moved to Kyrgyzstan for two years to help Adi build Axel. To read the full story, click here."
-        },
-        {
-            question: 'Can Axel take over my existing custom software?',
-            answer: "Axel was founded in 2018 by Phil Kravtsov and Adi Nasirdinov who’s mission was to grow the next generation of software developers in the untapped talent pool of central Asia. Initially discovering each other online, Phil (a front-end mobile developer from New York) and Adi (a back-end developer from Bishkek) thought they could bring their talents and personalities together to build a software development experience for the world like no other. Phil moved to Kyrgyzstan for two years to help Adi build Axel. To read the full story, click here."
-        },
-        {
-            question: 'When you’re done, who owns the code?',
-            answer: "Axel was founded in 2018 by Phil Kravtsov and Adi Nasirdinov who’s mission was to grow the next generation of software developers in the untapped talent pool of central Asia. Initially discovering each other online, Phil (a front-end mobile developer from New York) and Adi (a back-end developer from Bishkek) thought they could bring their talents and personalities together to build a software development experience for the world like no other. Phil moved to Kyrgyzstan for two years to help Adi build Axel. To read the full story, click here."
-        },
-        {
-            question: 'What technologies / languages do you work with?',
-            answer: "Axel was founded in 2018 by Phil Kravtsov and Adi Nasirdinov who’s mission was to grow the next generation of software developers in the untapped talent pool of central Asia. Initially discovering each other online, Phil (a front-end mobile developer from New York) and Adi (a back-end developer from Bishkek) thought they could bring their talents and personalities together to build a software development experience for the world like no other. Phil moved to Kyrgyzstan for two years to help Adi build Axel. To read the full story, click here."
-        },
-        {
-            question: 'When you’re done, who owns the code?',
-            answer: "Axel was founded in 2018 by Phil Kravtsov and Adi Nasirdinov who’s mission was to grow the next generation of software developers in the untapped talent pool of central Asia. Initially discovering each other online, Phil (a front-end mobile developer from New York) and Adi (a back-end developer from Bishkek) thought they could bring their talents and personalities together to build a software development experience for the world like no other. Phil moved to Kyrgyzstan for two years to help Adi build Axel. To read the full story, click here."
-        },
-        {
-            question: 'What technologies / languages do you work with?',
-            answer: "Axel was founded in 2018 by Phil Kravtsov and Adi Nasirdinov who’s mission was to grow the next generation of software developers in the untapped talent pool of central Asia. Initially discovering each other online, Phil (a front-end mobile developer from New York) and Adi (a back-end developer from Bishkek) thought they could bring their talents and personalities together to build a software development experience for the world like no other. Phil moved to Kyrgyzstan for two years to help Adi build Axel. To read the full story, click here."
-        }
-    ]
+    const [faqs, setFaqs] = useState()
+
+    async function GetTack() {
+        const response = await axios.get('https://soft.datashop.uz/api/')
+        setFaqs(response.data);
+        console.log(response.data);
+    }
+    useEffect(() => {
+        GetTack()
+    }, [])
 
     return (
         <div className="container">
@@ -67,7 +28,7 @@ export default function Faq() {
                     <div className="faqss">
                         {
                             faqs.map(faq => (
-                                <FaqMessage  question={faq.question} answer={faq.answer}/>
+                                <FaqMessage id={faq.id} question={faq.title} answer={faq.desc} />
                             ))
                         }
                     </div>

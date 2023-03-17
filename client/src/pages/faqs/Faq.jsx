@@ -9,8 +9,8 @@ export default function Faq() {
 
   async function GetTack() {
     const response = await axios.get('https://soft.datashop.uz/api/');
-    setFaqs(response.data);
-    console.log(response.data);
+    setFaqs(response.data.results);
+    console.log(response.data.results);
   }
 
   useEffect(() => {

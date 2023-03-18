@@ -4,9 +4,9 @@ import { IoMdClose } from 'react-icons/io'
 import axios from "axios";
 
 function ImgGallary() {
-
+  const URL = 'https://soft.datashop.uz'
   async function GetTack() {
-    const response = await axios.get('https://soft.datashop.uz/api/gallary/');
+    const response = await axios.get('https://soft.datashop.uz/gallery/');
     setImages(response.data);
     console.log(response.data);
   }
@@ -54,7 +54,7 @@ function ImgGallary() {
         {images.map((image, i) => (
           <img
             key={i}
-            src={image}
+            src={URL + image.image}
             style={{ width: "100%", display: "block" }}
             onClick={() => viewImage(image, i)}
           />

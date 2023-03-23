@@ -14,7 +14,7 @@ function ImgGallary() {
   useEffect(() => {
     GetTack();
   }, []);
-
+  // image function
   const [images , setImages] = useState([])
 
   const [data, setData] = useState({ img: '', i: 0 })

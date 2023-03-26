@@ -56,7 +56,7 @@ function ImgGallary() {
             key={i}
             src={URL + image.image}
             style={{ width: "100%", display: "block" }}
-            onClick={() => viewImage(image, i)}
+            onClick={() => viewImage(`${URL}${image.image}`, i)}
           />
         ))}
       </Masonry>

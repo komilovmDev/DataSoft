@@ -17,8 +17,8 @@ import soft3 from '../images/soft3.svg'
 import soft4 from '../images/soft4.svg'
 import { HiOutlineMenuAlt1 } from 'react-icons/hi'
 import { useState } from 'react'
-import Navbar from './Navbar'
-import Footer from './Footer'
+import Navbar from '../utils/Navbar'
+import Footer from '../utils/Footer'
 import ImgGallary from './Gallary'
 
 export default function Home() {

@@ -1,5 +1,5 @@
-import Navbar from './Navbar'
-import Footer from './Footer'
+import Navbar from '../utils/Navbar'
+import Footer from '../utils/Footer'
 import uzum from '../images/uzum.png'
 import tesla from '../images/tesla.png'
 import apple from '../images/apple.png'

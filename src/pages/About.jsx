@@ -1,5 +1,5 @@
-import Navbar from './Navbar'
-import Footer from './Footer'
+import Navbar from '../utils/Navbar'
+import Footer from '../utils/Footer'
 import aboutImg from '../images/about.svg'
 import gallery1 from '../images/galery1.png'
 import gallery2 from '../images/galarey2.png'

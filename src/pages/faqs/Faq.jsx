@@ -1,5 +1,5 @@
-import Navbar from '../Navbar';
-import Footer from '../Footer';
+import Navbar from '../../utils/Navbar'
+import Footer from '../../utils/Footer'
 import FaqMessage from './faqMeesge';
 import { useEffect, useState } from 'react';
 import axios from 'axios';

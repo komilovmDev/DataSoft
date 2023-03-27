@@ -3,11 +3,18 @@ import Masonry, { ResponsiveMasonry } from "react-responsive-masonry"
 import { IoMdClose } from 'react-icons/io'
 import axios from "axios";
 
-function ImgGallary() {
+function ImgGallary({ index }) {
   const URL = 'https://soft.datashop.uz'
+
+  const [data, setData] = useState({ img: '', i: 0 })
+
   async function GetTack() {
     const response = await axios.get('https://soft.datashop.uz/gallery/');
     setImages(response.data);
+    setData({
+      img: response.data[index], 
+      i: index
+    })
     console.log(response.data);
   }
 
@@ -17,7 +24,6 @@ function ImgGallary() {
   // image function
   const [images , setImages] = useState([])
 
-  const [data, setData] = useState({ img: '', i: 0 })
 
   const viewImage = (img, i) => {
     setData({ img, i })
@@ -28,14 +34,22 @@ function ImgGallary() {
     let i = data.i;
     if (action === 'next-img') {
       setData({ img: images[i + 1], i: i + 1 });
+      console.log({ img: images[i + 1], i: i + 1 });
     }
     if (action === 'prev-img') {
-      setData({ img: images[i - 1], i: i - 1 });
+      setData({ img: images[i - 1], i: i - 1 });  
     }
     if (!action) {
       setData({ img: '', i: 0 });
     }
   }
+  // function setImg() {
+  //   if (viewImage) {
+  //     data.img
+  //   }else {
+  //     ''
+  //   } 
+  // }
 
   return (
     <>
@@ -43,7 +57,7 @@ function ImgGallary() {
         <div className="openImg">
           <button className="imgClose" style={{ position: 'absolute', top: '10px', right: '10px' }} onClick={() => imgAction()}> <IoMdClose style={{ color: '#FFFFFF' }} /> </button>
           <button className="imgPrev" style={{ fontSize: '36px' }} onClick={() => imgAction('prev-img')} >{'<'}</button>
-          <img src={data.img} style={{ width: 'auto', maxWidth: '90%', maxHeight: '90%' }} />
+          <img src={URL + data.img.image} style={{ width: 'auto', maxWidth: '90%', maxHeight: '90%' }} />
           <button className="imgNext" style={{ fontSize: '36px' }} onClick={() => imgAction('next-img')} >{'>'}</button>
         </div>
       }
@@ -56,7 +70,7 @@ function ImgGallary() {
             key={i}
             src={URL + image.image}
             style={{ width: "100%", display: "block" }}
-            onClick={() => viewImage(`${URL}${image.image}`, i)}
+            onClick={() => viewImage({image: `${URL}${image.image}`}, i)}
           />
         ))}
       </Masonry>
